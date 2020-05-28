@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tpH-l7-2lr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16097"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3h5-HU-tmr">
+            <objects>
+                <tableViewController id="tpH-l7-2lr" customClass="ViewController" customModule="Test1_DZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uMY-YC-9N0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="160" id="K80-Hk-wRL" customClass="TableViewCell" customModule="Test1_DZ" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="160"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K80-Hk-wRL" id="OhX-te-9k0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8rI-IC-SqQ">
+                                            <rect key="frame" x="19" y="5" width="375" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="375" id="Bhv-gE-m5t"/>
+                                                <constraint firstAttribute="height" constant="150" id="Csc-Zh-dMu"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8rI-IC-SqQ" firstAttribute="top" secondItem="OhX-te-9k0" secondAttribute="top" constant="5" id="65h-QW-kkY"/>
+                                        <constraint firstAttribute="trailing" secondItem="8rI-IC-SqQ" secondAttribute="trailing" constant="20" id="6ua-pq-0xH"/>
+                                        <constraint firstAttribute="bottom" secondItem="8rI-IC-SqQ" secondAttribute="bottom" constant="5" id="7jH-WP-nOi"/>
+                                        <constraint firstItem="8rI-IC-SqQ" firstAttribute="leading" secondItem="OhX-te-9k0" secondAttribute="leading" constant="19" id="JNn-1u-e6r"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageView" destination="8rI-IC-SqQ" id="eAb-lp-jue"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tpH-l7-2lr" id="g6x-p3-ceE"/>
+                            <outlet property="delegate" destination="tpH-l7-2lr" id="sU9-pq-ril"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8th-iR-8pO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259.4202898550725" y="-96.428571428571431"/>
+        </scene>
+    </scenes>
+</document>
