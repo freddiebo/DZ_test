@@ -1,0 +1,6 @@
+module Pods_Test2_DZ {
+  umbrella header "Pods-Test2_DZ-umbrella.h"
+
+  export *
+  module * { export * }
+}
